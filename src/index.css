@@ -43,3 +43,10 @@ body {
   background-color: var(--success-btn) !important;
   border-color: transparent !important;
 }
+
+.no-data {
+  pointer-events: none;
+  opacity: 0.8;
+  text-align: center;
+}
+

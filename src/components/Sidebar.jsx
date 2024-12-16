@@ -6,7 +6,6 @@ import { useState } from "react";
 export default function Sidebar() {
   const [hideSidebar, setHideSidebar] = useState(false);
   const { pathname } = useLocation();
-  console.log("pathname", pathname);
   return (
     <>
       <div

@@ -34,6 +34,7 @@
   transition: background-color var(--transition-time);
   letter-spacing: 0.08rem;
   white-space: nowrap;
+  font-size: 1.1rem;
 }
 
 .sidebar.hide .sidebar-link {

@@ -7,13 +7,14 @@ export default function useLocalStorage(storageKey) {
     try {
       localStorage.setItem(key, JSON.stringify(value));
       setKey(key);
+      setCurrentValue(getValue(key));
     } catch (error) {
       console.log("Error: ", error);
     }
   }, []);
   const getValue = useCallback((key) => {
     try {
-      return JSON.parse(localStorage.getItem(key) || "");
+      return JSON.parse(localStorage.getItem(key) || "[]");
     } catch (error) {
       console.log("Error: ", error);
       return;
